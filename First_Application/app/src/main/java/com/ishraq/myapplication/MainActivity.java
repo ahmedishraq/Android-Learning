@@ -6,12 +6,18 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView text;
-    Button do_button;
+    EditText username;
+    EditText password;
+    Button register;
+    TextView credentials;
+    String person;
+
+
 
 
     @Override
@@ -19,13 +25,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        do_button = findViewById(R.id.domagic);
-//
-//        do_button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                do_button.setBackgroundColor(Color.BLACK);
-//            }
-//        });
+        username = findViewById(R.id.usernamePT);
+        password = findViewById(R.id.passwordP);
+        register = findViewById(R.id.registerB);
+        credentials = findViewById(R.id.credentialsTV);
+
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                person = username.getText().toString();
+                credentials.setText("Username: "+person);
+            }
+        });
+
     }
 }
