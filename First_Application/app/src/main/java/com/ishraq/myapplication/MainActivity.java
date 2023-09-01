@@ -19,13 +19,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        do_button = findViewById(R.id.domagic);
-
-        do_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                do_button.setBackgroundColor(Color.BLACK);
-            }
-        });
+//        do_button = findViewById(R.id.domagic);
+//
+//        do_button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                do_button.setBackgroundColor(Color.BLACK);
+//            }
+//        });
     }
 }
