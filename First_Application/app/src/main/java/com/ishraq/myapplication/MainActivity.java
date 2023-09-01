@@ -25,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Title of the Application
+        getSupportActionBar().setTitle("Tax Management System");
+
         username = findViewById(R.id.usernamePT);
         password = findViewById(R.id.passwordP);
         register = findViewById(R.id.registerB);
