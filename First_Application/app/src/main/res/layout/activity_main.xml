@@ -10,10 +10,10 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/taxIV"
         android:layout_width="300dp"
         android:layout_height="200dp"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
+        app:srcCompat="@drawable/t" />
 
     <EditText
         android:id="@+id/usernamePT"

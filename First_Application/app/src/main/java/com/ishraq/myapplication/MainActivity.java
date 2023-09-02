@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     Button register;
     TextView credentials;
     String person;
+    ImageView tax_logo;
 
 
 
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         password = findViewById(R.id.passwordP);
         register = findViewById(R.id.registerB);
         credentials = findViewById(R.id.credentialsTV);
+        tax_logo = findViewById(R.id.taxIV);
 
         register.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
 
                 person = username.getText().toString();
                 credentials.setText("Username: "+person);
+
+                // change the image after pressing the button
+                tax_logo.setImageResource(R.drawable.a);
             }
         });
 
